@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20rem;
+  background-image:url("Lenin Isaak Brodsky.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  font-size: 4rem;
+}
+
+h1 {
+  font-family: 'Josefin Sans', sans-serif; 
+}
