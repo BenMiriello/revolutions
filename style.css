@@ -8,18 +8,25 @@
 }
 
 header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 17.5rem;
   max-height: 20vw;
   min-height: 10rem;
   background-image:url("Lenin Isaak Brodsky.jpg");
+  /* background-image:url("bastille.jpg"); */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   color: white;
-  /* font-size: 4rem; */
+}
+
+#header-cover-container {
+  width: 100%;
+  height: 100%;
+  background: rgba(60, 4, 4, 0.35);
+  /* background: rgba(21, 4, 60, 0.35); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 h1 {
