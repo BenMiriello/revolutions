@@ -1,0 +1,25 @@
+{
+  "name": "revolutions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.jsx",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BenMiriello/revolutions.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BenMiriello/revolutions/issues"
+  },
+  "homepage": "https://github.com/BenMiriello/revolutions#readme",
+  "dependencies": {
+    "@babel/cli": "^7.14.8",
+    "@babel/core": "^7.14.8",
+    "@babel/plugin-transform-react-jsx": "^7.14.5"
+  }
+}
