@@ -23,7 +23,9 @@ const app = (podcast) => (
       </div>
     </header>
     <div>
-      
+      {podcast.episodes.map(episode => (
+        <div>{episode.title}</div>
+      ))}
     </div>
   </>
 )
