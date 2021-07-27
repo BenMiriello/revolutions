@@ -14,5 +14,6 @@ const app = (podcast) => (
 
 const feedUrl = 'https://revolutionspodcast.libsyn.com/rss/';
 podcastFeedParser.getPodcastFromURL(feedUrl).then(podcast => {
+  console.log(podcast.episodes[0])
   window.document.getElementById('app').replaceWith(app(podcast));
 });

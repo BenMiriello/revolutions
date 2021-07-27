@@ -1,9 +1,9 @@
 const createElement = require('./createElement');
 
-const episodeDescription = (description) => {
-  const temp = document.createElement('div');
-  temp.innerHTML = description;
-  return temp.firstChild;
+const episodeDescription = (desc) => {
+  const descriptionElement = document.createElement('div');
+  descriptionElement.innerHTML = desc;
+  return descriptionElement;
 };
 
 const episodeCards = (episodes) => (
