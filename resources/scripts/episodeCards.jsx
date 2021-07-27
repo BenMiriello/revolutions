@@ -7,7 +7,7 @@ const episodeDescription = (description) => {
 };
 
 const episodeCards = (episodes) => (
-  <div className='page-body-container'>
+  <div className='episode-cards-container'>
     {episodes.map(episode =>
       <div className='episode-card'>
         <h3>{episode.title}</h3>

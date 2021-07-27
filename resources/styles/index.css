@@ -70,7 +70,7 @@ h3 {
 }
 
 .page-body-container {
-  width: 100%;
+  width: calc(100% - 0.5rem);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -78,16 +78,21 @@ h3 {
   padding: 0.5rem;
 }
 
-.episode-card {
+.episode-cards-containerc{
   width: 100%;
-  height: 6rem;
+}
+
+.episode-card {
+  height: 10rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: top;
+  padding: 0.5rem;
 }
 
 @media only screen and (min-width: 700px) {
   .page-body-container {
-    padding: 4rem;
+    padding: 5rem;
+    width: calc(100% - 10rem);
   }
 }

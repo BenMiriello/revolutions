@@ -4,10 +4,12 @@ const header = require('./header');
 const episodeCards = require('./episodeCards');
 
 const app = (podcast) => (
-  <>
+  <div>
     { header(podcast.meta) }
-    { episodeCards(podcast.episodes) }
-  </>
+    <div className='page-body-container'>
+      { episodeCards(podcast.episodes) }
+    </div>
+  </div>
 )
 
 const feedUrl = 'https://revolutionspodcast.libsyn.com/rss/';
