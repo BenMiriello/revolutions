@@ -1,11 +1,7 @@
 const podcastFeedParser = require("podcast-feed-parser");
 
-async function printPodcastTitle (url) {
-	const podcast = await podcastFeedParser.getPodcastFromURL(url)
-	console.log(podcast)
-}
-
-printPodcastTitle('https://revolutionspodcast.libsyn.com/rss/')
+const revolutionsFeedUrl = 'https://revolutionspodcast.libsyn.com/rss/'
+let revolutionsPodcast = {}
 
 function createElement(tagName, attrs = {}, ...children) {
   const elem = Object.assign(document.createElement(tagName), attrs)
@@ -16,11 +12,11 @@ function createElement(tagName, attrs = {}, ...children) {
   return elem
 }
 
-const app = (
+const app = (podcast) => (
   <>
     <header>
       <div id='header-cover-container'>
-        <h1>REVOLUTIONS</h1>
+        <h1>{podcast.meta.title}</h1>
         <div id='sub-header-container'>
           <h3>a&nbsp;weekly&nbsp;podcast&nbsp;exploring great&nbsp;political&nbsp;revolutions</h3>
         </div>
@@ -32,5 +28,6 @@ const app = (
   </>
 )
 
-window.document.getElementById('app').replaceWith(app);
-
+podcastFeedParser.getPodcastFromURL(revolutionsFeedUrl).then(podcast => {
+  window.document.getElementById('app').replaceWith(app(podcast));
+});
