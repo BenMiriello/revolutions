@@ -11,8 +11,8 @@ header {
   height: 17.5rem;
   max-height: 20vw;
   min-height: 10rem;
-  background-image:url("Lenin Isaak Brodsky.jpg");
-  /* background-image:url("bastille.jpg"); */
+  background-image:url("../images/Lenin Isaak Brodsky.jpg");
+  /* background-image:url("resources/images/bastille.jpg"); */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
