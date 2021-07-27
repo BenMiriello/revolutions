@@ -1,16 +1,9 @@
 const podcastFeedParser = require("podcast-feed-parser");
+const createElement = require('./createElement');
+const episodeCards = require('./episodeCards');
 
 const revolutionsFeedUrl = 'https://revolutionspodcast.libsyn.com/rss/'
 let revolutionsPodcast = {}
-
-function createElement(tagName, attrs = {}, ...children) {
-  const elem = Object.assign(document.createElement(tagName), attrs)
-  for (const child of children) {
-    if (Array.isArray(child)) elem.append(...child)
-    else elem.append(child)
-  }
-  return elem
-}
 
 const app = (podcast) => (
   <>
@@ -23,9 +16,7 @@ const app = (podcast) => (
       </div>
     </header>
     <div>
-      {podcast.episodes.map(episode => (
-        <div>{episode.title}</div>
-      ))}
+      {episodeCards(podcast.episodes)}
     </div>
   </>
 )

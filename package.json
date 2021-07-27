@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.jsx",
   "scripts": {
-    "babel": "npx babel resources/scripts/index.jsx -d dist",
+    "babel": "npx babel resources/scripts/* -d dist",
     "browserify": "browserify dist/index.js -o dist/bundle.js",
     "build": "npm run babel && npm run browserify",
     "test": "echo \"Error: no test specified\" && exit 1"
