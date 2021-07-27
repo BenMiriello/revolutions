@@ -6,15 +6,18 @@ const episodeDescription = (desc) => {
   return descriptionElement;
 };
 
-const episodeCards = (episodes) => (
+const formattedDate = (dateString) =>
+  new Date(dateString).toDateString().split(' ').slice(1, 4).join(' ');
+
+const episodeCards = (episodes) =>
   <div className='episode-cards-container'>
     {episodes.map(episode =>
       <div className='episode-card'>
         <h3>{episode.title}</h3>
+        <p>{formattedDate(episode.pubDate)}</p>
         {episodeDescription(episode.description)}
       </div>
     )}
-  </div>
-);
+  </div>;
 
 module.exports = episodeCards;
