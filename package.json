@@ -5,8 +5,8 @@
   "main": "index.jsx",
   "scripts": {
     "babel": "npx babel resources/scripts/index.jsx -d dist",
-    "bundle": "browserify dist/index.js -o dist/bundle.js",
-    "build": "npm run babel && npm run bundle",
+    "browserify": "browserify dist/index.js -o dist/bundle.js",
+    "build": "npm run babel && npm run browserify",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
