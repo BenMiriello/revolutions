@@ -7,12 +7,14 @@ const episodeDescription = (description) => {
 };
 
 const episodeCards = (episodes) => (
-  episodes.map(episode =>
-    <div>
-      <h3>{episode.title}</h3>
-      {episodeDescription(episode.description)}
-    </div>
-  )
+  <div>
+    {episodes.map(episode =>
+      <div>
+        <h3>{episode.title}</h3>
+        {episodeDescription(episode.description)}
+      </div>
+    )}
+  </div>
 );
 
 module.exports = episodeCards;
