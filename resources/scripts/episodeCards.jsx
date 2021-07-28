@@ -13,7 +13,7 @@ const episodeCard = episode => {
 
   const formattedDate = () => {
     if (episode.pubDate) {
-      return <p>new Date(dateString).toDateString().split(' ').slice(1, 4).join(' ')</p>;
+      return <p>{new Date(dateString).toDateString().split(' ').slice(1, 4).join(' ')}</p>;
     }
   };
 
