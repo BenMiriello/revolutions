@@ -8,12 +8,16 @@
   font-family: 'lato', sans-serif;
 }
 
+a {
+  color: #5a8ca7;
+}
+
 header {
   height: 17.5rem;
   max-height: 20vw;
   min-height: 10rem;
   /* background-image:url("../images/Lenin Isaak Brodsky.jpg"); */
-  background-image:url("resources/images/bastille.jpg");
+  background-image:url("../images/bastille.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -79,13 +83,22 @@ h3 {
   padding: 0.5rem;
 }
 
-.episode-cards-containerc{
+.episode-cards-container {
   width: 100%;
 }
 
 .episode-card {
   min-height: 10rem;
   padding: 0.5rem;
+}
+
+.episode-card-description {
+  margin-top: 0.5rem;
+}
+
+.ep-card-link-duration-container {
+  /* display: block; */
+  margin-top: 0.5rem;
 }
 
 @media only screen and (min-width: 700px) {

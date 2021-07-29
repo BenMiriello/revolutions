@@ -7,6 +7,7 @@ const episodeCard = episode => {
     if (episode.description) {
       const descriptionElement = document.createElement('div');
       descriptionElement.innerHTML = episode.description;
+      descriptionElement.className = 'episode-card-description';
       return descriptionElement;
     }
   };
@@ -23,12 +24,27 @@ const episodeCard = episode => {
     }
   };
 
+  const duration = () => {
+    if (episode.duration) {
+      const minutes = Math.floor(episode.duration/60);
+      const seconds = episode.duration % 60;
+      return <span>{`${minutes}:${seconds}${seconds < 10 ? '0' : ''}`}</span>;
+    }
+  };
+
+  const directLinkAndDuration = () =>
+    <div className='ep-card-link-duration-container'>
+      {directLink()}
+      <span style="width:0.5rem; display:inline-block;"></span>
+      {duration()}
+    </div>;
+
   return(
     <div className='episode-card'>
       {title()}
       {formattedDate()}
       {description()}
-      {directLink()}
+      {directLinkAndDuration()}
     </div>
   )
 };
