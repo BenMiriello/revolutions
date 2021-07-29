@@ -8,6 +8,10 @@ const episodeCard = episode => {
       const descriptionElement = document.createElement('div');
       descriptionElement.innerHTML = episode.description;
       descriptionElement.className = 'episode-card-description';
+      Array.from(descriptionElement.children).forEach(child => {
+        child.style.paddingTop = '0.5rem'
+      });
+
       return descriptionElement;
     }
   };
