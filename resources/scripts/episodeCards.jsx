@@ -14,7 +14,8 @@ const episodeCard = episode => {
 
   const formattedDate = () => {
     if (episode.pubDate) {
-      return <p>{new Date(episode.pubDate).toDateString().split(' ').slice(1, 4).join(' ')}</p>;
+      const date = new Date(episode.pubDate).toDateString().split(' ').slice(1, 4).join(' ');
+      return <p style='color: gray;'>{date}</p>;
     }
   };
 
@@ -28,7 +29,7 @@ const episodeCard = episode => {
     if (episode.duration) {
       const minutes = Math.floor(episode.duration/60);
       const seconds = episode.duration % 60;
-      return <span>{`${minutes}:${seconds}${seconds < 10 ? '0' : ''}`}</span>;
+      return `${minutes}:${seconds}${seconds < 10 ? '0' : ''}`;
     }
   };
 
@@ -36,7 +37,7 @@ const episodeCard = episode => {
     <div className='ep-card-link-duration-container'>
       {directLink()}
       <span style="width:0.5rem; display:inline-block;"></span>
-      {duration()}
+      <span style='color: gray;'>{duration()}</span>
     </div>;
 
   return(
