@@ -1,0 +1,33 @@
+{
+  "name": "revolutions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.jsx",
+  "scripts": {
+    "babel": "npx babel resources/scripts/* -d dist",
+    "browserify": "browserify dist/index.js -o dist/bundle.js",
+    "build": "npm run babel && npm run browserify",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BenMiriello/revolutions.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BenMiriello/revolutions/issues"
+  },
+  "homepage": "https://github.com/BenMiriello/revolutions#readme",
+  "dependencies": {
+    "@babel/cli": "^7.14.8",
+    "@babel/core": "^7.14.8",
+    "@babel/plugin-transform-react-jsx": "^7.14.5",
+    "fs": "^0.0.1-security",
+    "podcast-feed-parser": "^1.0.4"
+  },
+  "devDependencies": {
+    "browserify": "^17.0.0"
+  }
+}

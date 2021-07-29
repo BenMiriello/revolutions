@@ -5,14 +5,15 @@
   outline: 0;
   vertical-align: baseline;
   background: transparent;
+  font-family: 'roboto', sans-serif;
 }
 
 header {
   height: 17.5rem;
   max-height: 20vw;
   min-height: 10rem;
-  background-image:url("Lenin Isaak Brodsky.jpg");
-  /* background-image:url("bastille.jpg"); */
+  background-image:url("../images/Lenin Isaak Brodsky.jpg");
+  /* background-image:url("resources/images/bastille.jpg"); */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -22,6 +23,7 @@ header {
 h1 {
   font-family: 'Josefin Sans', sans-serif; 
   font-size: 10vw;
+  text-transform: uppercase;
 }
 
 h3 {
@@ -35,9 +37,9 @@ h3 {
   background: rgba(60, 0, 0, 0.35);
   /* background: rgba(21, 4, 60, 0.35); */
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
 }
 
 #sub-header-container {
@@ -64,5 +66,33 @@ h3 {
 @media only screen and (max-width: 700px) {
   h3 {
     font-size: 1rem;
+  }
+}
+
+.page-body-container {
+  width: calc(100% - 0.5rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.episode-cards-containerc{
+  width: 100%;
+}
+
+.episode-card {
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  padding: 0.5rem;
+}
+
+@media only screen and (min-width: 700px) {
+  .page-body-container {
+    padding: 5rem;
+    width: calc(100% - 10rem);
   }
 }
