@@ -3,7 +3,7 @@ const podcastFeedParser = require("podcast-feed-parser");
 const header = require('./header');
 const episodeCards = require('./episodeCards');
 
-const app = (podcast) => (
+const app = podcast => (
   <div>
     { header(podcast.meta) }
     <div className='page-body-container'>
