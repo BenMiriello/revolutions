@@ -1,6 +1,6 @@
 const createElement = require('./createElement');
 const podcastFeedParser = require("podcast-feed-parser");
-const header = require('./header');
+const header = require('./header2');
 const episodeCards = require('./episodeCards');
 
 const app = podcast => (

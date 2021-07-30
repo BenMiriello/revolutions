@@ -12,8 +12,14 @@ a {
   color: #5a8ca7;
 }
 
-/* header {
-} */
+header {
+  background-image:url("../images/bastille_2.jpg");
+  min-height: 20rem;
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+}
 
 h1 {
   font-family: 'Bebas Neue', sans-serif; 
@@ -28,7 +34,6 @@ h3 {
 
 #header-title-container {
   width: 100%;
-  /* height: 7rem; */
   padding-top: 0.5rem;
   color: white;
   height: 6rem;
@@ -41,10 +46,22 @@ h3 {
   align-items: center;
 }
 
-#sub-header-container {
-  /* width: 80%; */
+#navbar {
+  height: 6rem;
+  width: 100%;
+  background: rgba(0,0,0,1);
+  position: fixed;
+}
+
+#navbar h1 {
+  width: 100%;
+  color: white;
+  /* background: rgb(0,0,0); */
   text-align: center;
-  /* height: 5rem; */
+}
+
+#sub-header-container {
+  text-align: center;
   max-height: 20vw;
   min-height: 6rem;
   /* background-image:url("../images/Lenin Isaak Brodsky.jpg"); */
