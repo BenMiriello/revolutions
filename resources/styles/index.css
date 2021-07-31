@@ -23,13 +23,23 @@ header {
 
 h1 {
   font-family: 'Bebas Neue', sans-serif; 
-  font-size: 10vw;
+  font-size: 4rem;
   text-transform: uppercase;
 }
 
 h3 {
   font-family: 'lato', sans-serif;
-  font-size: 2vw;
+  font-size: 1.5rem;
+}
+
+@media only screen and (min-width: 700px) {
+  h1 {
+    font-size: 5rem;
+  }
+
+  h3 {
+    font-size: 1.75rem
+  }
 }
 
 #header-title-container {
@@ -82,28 +92,6 @@ h3 {
 .nav div {
   border-bottom-width: 2px;
   border-style: solid;
-}
-
-@media only screen and (min-width: 1000px) {
-  h1 {
-    font-size: 7rem;
-  }
-
-  h3 {
-    font-size: 1.5rem;
-  }
-}
-
-@media only screen and (max-width: 300px) {
-  h1 {
-    font-size: 2rem;
-  }
-}
-
-@media only screen and (max-width: 700px) {
-  h3 {
-    font-size: 1rem;
-  }
 }
 
 .page-body-container {
