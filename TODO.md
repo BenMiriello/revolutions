@@ -9,3 +9,8 @@ Showcase latest episode
 Only show subheader for all previous episodes in log
 
 Style links
+
+On page load, there is just the title and bastille image,
+  - but after 1-2 seconds, the navigation buttons or other contents in or around the header load
+
+When scrolling down, the REVOLUTIONS header slides to the left and either the nav links or hamburger menu moves to the right of it (fade out or slide up of previous location and fade in of these in header)
