@@ -12,7 +12,7 @@ const mainNavbar = meta => {
 const landingNavbar = () => {
   return(
     <div className='nav'>
-      <a>Support the Show</a>
+      <a href='support'>Support the Show</a>
       <a>Bibliograpy</a>
       <a>About Me</a>
       <a>The History of Rome</a>

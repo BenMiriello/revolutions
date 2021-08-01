@@ -3,11 +3,26 @@ const podcastFeedParser = require("podcast-feed-parser");
 const header = require('./header');
 const episodeCards = require('./episodeCards');
 
+const support = () => {
+  return(
+    <div>TEST SUPPORT</div>
+  )
+}
+
+const navigator = podcast => {
+  switch(window.location.pathname){
+    case '/support':
+      return support();
+    default:
+      return episodeCards(podcast.episodes);
+  }
+}
+
 const app = podcast => (
   <div>
     { header(podcast.meta) }
     <div className='page-body-container'>
-      { episodeCards(podcast.episodes) }
+      { navigator(podcast) }
     </div>
   </div>
 )
