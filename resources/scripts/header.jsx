@@ -1,25 +1,33 @@
 const createElement = require('./createElement');
 
-const nav = () => {
-  return (
-    <div className='nav'>
-      <div>First</div>
-      <div>Second</div>
-      <div>Third</div>
-      <div>Fourth</div>
-      <div>Fifth</div>
+const mainNavbar = meta => {
+  title = meta && meta.title ? meta.title : 'Revolutions';
+  return(
+    <div id='navbar'>
+      <h1>{title}</h1>
     </div>
   )
-};
+}
+
+const landingNavbar = () => {
+  return(
+    <div className='nav'>
+      <a>Support the Show</a>
+      <a>Bibliograpy</a>
+      <a>About Me</a>
+      <a>The History of Rome</a>
+      <a>Audible Recs</a>
+      <a>Contact</a>
+    </div>
+  )
+}
 
 const header = meta => (
-  <header>
-    <div id='sub-header-container'></div>
-    <div id='header-title-container'>
-      <h1>{meta.title}</h1>
-    </div>
-    {nav()}
-  </header>
+  <>
+    {mainNavbar(meta)}
+    <header></header>
+    {landingNavbar()}
+  </>
 )
 
 module.exports = header;

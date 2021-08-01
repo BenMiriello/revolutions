@@ -13,7 +13,7 @@ a {
 }
 
 header {
-  background-image:url("../images/bastille_2.jpg");
+  background-image:url("../images/bastille.jpg");
   min-height: 20rem;
   height: 50vh;
   background-repeat: no-repeat;
@@ -90,7 +90,7 @@ h3 {
 }
 
 .nav div {
-  border-bottom-width: 2px;
+  border-bottom-width: 1.5px;
   border-style: solid;
 }
 
