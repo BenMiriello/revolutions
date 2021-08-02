@@ -1,12 +1,9 @@
 const createElement = require('./createElement');
 
-const mainNavbar = podcast => {
-  return(
-    <div id='navbar'>
-      <h1><a href='/' >{podcast.meta.title}</a></h1>
-    </div>
-  )
-};
+const mainNavbar = podcast =>
+  <div id='navbar'>
+    <h1><a href='/' >{podcast.meta.title}</a></h1>
+  </div>;
 
 const landingNavbar = () =>
   <div className='nav'>
@@ -18,12 +15,11 @@ const landingNavbar = () =>
     <a href='contact' >Contact</a>
   </div>;
 
-const header = meta => (
+const header = meta =>
   <>
     {mainNavbar(meta)}
     <header></header>
     {landingNavbar()}
-  </>
-)
+  </>;
 
 module.exports = header;
