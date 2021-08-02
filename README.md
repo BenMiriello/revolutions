@@ -17,3 +17,4 @@ This site uses jsx with Browserify and Babel, but not much else. You'll need to 
 
 In the same 'npm run build' command, after converting jsx, build then runs Browserify which takes everything in dist converted by babel and makes that into js code that will actually run in the browser. You'll see in src/scripts all the jsx files use require statements. Also note that these require statements are written to work as relative imports from other files within dist. So while you're writing in src/scripts, write the requires with the babel converted/generated file in dist in mind instead. Browserify is what allows this, inerprets the require statements, and converts it all into a single file also under dist. This file, bundle.js, is the final js file that's actually sent to the client.
 
+Start express server with ```node server.js```.

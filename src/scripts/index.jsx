@@ -17,8 +17,8 @@ const app = podcast => withNavigation(
 const feedUrl = 'https://revolutionspodcast.libsyn.com/rss/';
 podcastFeedParser.getPodcastFromURL(feedUrl).then(podcast => {
   if (isValidPodcastObject(podcast)) {
-    window.document.getElementById('app').replaceWith(app(podcast));
+    document.getElementById('app').replaceWith(app(podcast));
   } else {
-    window.location.href = "https://thehistoryofrome.typepad.com/revolutions_podcast/";
+    location.href = "https://thehistoryofrome.typepad.com/revolutions_podcast/";
   }
 });
