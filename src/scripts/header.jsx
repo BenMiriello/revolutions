@@ -1,5 +1,5 @@
 const createElement = require('./createElement');
-const { asNavigator } = require('./navigation');
+const navigation = require('./navigation');
 
 const mainNavbar = meta =>
   <div id='navbar'>
@@ -16,12 +16,12 @@ const landingNavbar = () =>
     <a href='contact'>Contact</a>
   </div>;
 
-const header = podcast => asNavigator(
+const header = podcast => navigation(
   <>
     {mainNavbar(podcast.meta)}
     <header></header>
     {landingNavbar()}
-  </>
+  </>, podcast
 );
 
 module.exports = header;
