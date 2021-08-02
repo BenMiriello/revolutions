@@ -19,13 +19,12 @@ const pages = [
 ];
 
 const navPage = data => {
-  let currentPage;
+  let currentPage = episodesPage;
   for (let page of pages) {
     if (window.location.pathname === page[0]) {
       currentPage = page[1];
     }
   }
-
   return currentPage(data);
 };
 
