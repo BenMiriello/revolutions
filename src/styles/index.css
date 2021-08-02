@@ -17,8 +17,9 @@ header {
   min-height: 20rem;
   height: 50vh;
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: center -50vh;
   background-size: cover;
+  background-attachment:fixed;
 }
 
 h1 {
