@@ -54,9 +54,9 @@ const episodeCard = episode => {
   )
 };
 
-const episodeCards = ({podcast}) =>
+const episodesPage = ({podcast}) =>
   <div className='episode-cards-container'>
     {podcast.episodes.map(episode => episodeCard(episode))}
   </div>;
 
-module.exports = episodeCards;
+module.exports = episodesPage;
