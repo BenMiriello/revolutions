@@ -18,6 +18,9 @@ When scrolling down, the REVOLUTIONS header slides to the left and either the na
 
 ## Code Changes
 
+[ ] Retain file structure after Browserifying instead of having everything get flattened (have a modules directory for example).
+[ ] Start loading page or run app() before response w/ podcast object.
+
 ### Changes to createElement
 
 [X] Factor out into its own file and require

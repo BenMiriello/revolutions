@@ -27,6 +27,12 @@ h1 {
   text-transform: uppercase;
 }
 
+h1 a {
+  font-family: inherit;
+  color: inherit;
+  text-decoration: none;
+}
+
 h3 {
   font-family: 'lato', sans-serif;
   font-size: 1.5rem;
