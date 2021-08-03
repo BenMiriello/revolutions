@@ -1,8 +1,8 @@
 const episodesPage = require('./episodesPage');
 const theHistoryOfRomePage = require('./theHistoryOfRomePage')
+const bibliographyPage = require('./bibliographyPage');
 const {
   supportPage,
-  bibliographyPage,
   aboutMePage,
   audibleRecsPage,
   contactPage

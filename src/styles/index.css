@@ -1,6 +1,6 @@
 * {
   margin: 0;
-  padding: 0;
+  /* padding: 0; */
   border: 0;
   outline: 0;
   vertical-align: baseline;
@@ -77,18 +77,6 @@ h3 {
   text-align: center;
 }
 
-#sub-header-container {
-  text-align: center;
-  max-height: 20vw;
-  min-height: 6rem;
-  /* background-image:url("../images/Lenin Isaak Brodsky.jpg"); */
-  background-image:url("../images/bastille_narrow.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  color: white;
-}
-
 .nav {
   height: 4rem;
   display: flex;
@@ -141,4 +129,13 @@ h3 {
     padding: 5rem;
     width: calc(100% - 10rem);
   }
+}
+
+.bibliography-container {
+  line-height: 200%;
+}
+
+.bibliography-container p {
+  font-size: 1.25rem;
+  margin-top: 1rem;
 }
