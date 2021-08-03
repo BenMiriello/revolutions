@@ -10,6 +10,7 @@ const navigation = (parent, data) => {
         newPage = navPage(data);
         document.querySelector('#nav-page').innerHTML = '';
         document.querySelector('#nav-page').append(newPage);
+        document.body.scrollIntoView({behavior: 'smooth', block: 'start'});
       });
     }
   })
