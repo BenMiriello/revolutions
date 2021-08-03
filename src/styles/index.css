@@ -68,6 +68,8 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  max-width: 65rem;
+  margin: auto;
 }
 
 .second-nav div {
@@ -82,6 +84,8 @@ header {
   justify-content: center;
   align-items: center;
   padding: 0.5rem;
+  max-width: 50rem;
+  margin: auto;
 }
 
 .episode-cards-container {
