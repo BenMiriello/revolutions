@@ -12,16 +12,6 @@ a {
   color: #5a8ca7;
 }
 
-header {
-  background-image:url("../images/bastille.jpg");
-  min-height: 20rem;
-  height: 50vh;
-  background-repeat: no-repeat;
-  background-position: center -50vh;
-  background-size: cover;
-  background-attachment:fixed;
-}
-
 h1 {
   font-family: 'Bebas Neue', sans-serif; 
   font-size: 4rem;
@@ -49,42 +39,38 @@ h3 {
   }
 }
 
-#header-title-container {
+header {
+  min-height: 30rem;
+  height: 50vh;
   width: 100%;
-  padding-top: 0.5rem;
-  color: white;
-  height: 6rem;
-  /* background: rgba(60, 0, 0, 0.35); */
-  /* background: rgba(21, 4, 60, 0.35); */
-  background: rgb(0,0,0);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  background-image:url("../images/bastille_narrow.jpg");
+  background-repeat: no-repeat;
+  background-position: 57% center;
+  background-size: cover;
 }
 
 #navbar {
+  position: fixed;
   height: 6rem;
   width: 100%;
   background: rgba(0,0,0,1);
-  position: fixed;
+  z-index: 2;
 }
 
 #navbar h1 {
   width: 100%;
   color: white;
-  /* background: rgb(0,0,0); */
   text-align: center;
 }
 
-.nav {
+.second-nav {
   height: 4rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-.nav div {
+.second-nav div {
   border-bottom-width: 1.5px;
   border-style: solid;
 }

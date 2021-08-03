@@ -7,7 +7,7 @@ const mainNavbar = meta =>
   </div>;
 
 const landingNavbar = () =>
-  <div className='nav'>
+  <div className='second-nav'>
     <a href='support'>Support the Show</a>
     <a href='bibliography'>Bibliograpy</a>
     <a href='aboutme'>About Me</a>
@@ -18,8 +18,9 @@ const landingNavbar = () =>
 
 const header = podcast => navigation(
   <>
-    {mainNavbar(podcast.meta)}
-    <header></header>
+    <header>
+      {mainNavbar(podcast.meta)}
+    </header>
     {landingNavbar()}
   </>, podcast
 );
