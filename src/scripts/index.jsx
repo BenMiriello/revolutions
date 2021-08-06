@@ -5,12 +5,12 @@ const header = require('./header');
 const navPage = require('./navPage');
 
 const app = podcast =>
-  <>
+  <div>
     { header(podcast) }
     <div className='page-body-container' id='nav-page' >
       { navPage(podcast) }
     </div>
-  </>
+  </div>
 
 const feedUrl = 'https://revolutionspodcast.libsyn.com/rss/';
 podcastFeedParser.getPodcastFromURL(feedUrl).then(podcast => {

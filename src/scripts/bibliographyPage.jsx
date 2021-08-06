@@ -3,7 +3,7 @@ const createElement = require('./createElement');
 const bibliographyPage = podcast =>
   <div>
     <h3>Bibliography</h3>
-    <div className="bibliography-container">
+    <div className="page-text-container">
       <p style="text-align: right;">[Updated Feb 2020]</p>
       <p style="text-align: left;">Music</p>
       <p style="font-size: 100%; margin-top: 0;">Theme music is from Joseph Haydn's <em>Oxford Symphony (No. 92)</em> courtesy of <a href="https://www.musopen.org/" target="_blank" rel="noopener">musopen.org</a></p>
