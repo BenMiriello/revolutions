@@ -11,7 +11,7 @@ const changePage = (element, data) => {
 const navigation = (parent, data) => {
   let clicked = false;
   let whereami = location.href;
-  let reloadInterval = setInterval(() => {
+  const reloadInterval = setInterval(() => {
     if (location.href !== whereami) {
       whereami = location.href;
       if (!clicked) changePage(parent, data);
