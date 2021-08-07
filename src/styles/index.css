@@ -45,8 +45,8 @@ h3 {
 }
 
 header {
-  min-height: 30rem;
-  height: 50vh;
+  min-height: 23rem;
+  height: 30vh;
   width: 100%;
   background-image:url("../images/bastille_narrow.jpg");
   background-repeat: no-repeat;
@@ -94,11 +94,13 @@ header {
   margin: 1rem;
   text-decoration: none;
   color: black;
-  font-family: bebas-neue-pro, sans-serif;
-  font-weight: 500;
-  font-size: 1.75rem;
-  letter-spacing: 1pt;
-  font-variant-caps: all-caps;
+  /* font-family: bebas-neue-pro, sans-serif; */
+  font-family: 'lato', sans-serif;
+  font-size: 1.2rem;
+  /* font-weight: 500; */
+  /* font-size: 1.75rem; */
+  /* letter-spacing: -.25pt; */
+  font-variant-caps: all-small-caps;
 }
 
 .page-body-container {
@@ -123,7 +125,7 @@ header {
 .episode-card {
   min-height: 10rem;
   padding: 1rem 0rem;
-  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .ep-card-date {
