@@ -26,3 +26,5 @@ When scrolling down, the REVOLUTIONS header slides to the left and either the na
 [X] Factor out into its own file and require
 [ ] Auto-require or include in each file
 [ ] Don't append fragments, just append the child elements of the fragment.
+[ ] Accept datasets, other attributes, custom attributes
+[ ] Accept functions (render as <Component/> not just {component()})
