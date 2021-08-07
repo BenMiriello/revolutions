@@ -3,10 +3,7 @@ const bibliographyPage = require('./bibliographyPage');
 const aboutMePage = require('./aboutMePage');
 const theHistoryOfRomePage = require('./theHistoryOfRomePage');
 const supportPage = require('./supportPage');
-const {
-  audibleRecsPage,
-  contactPage
-} = require('./placeholderPages');
+const contactPage = require('./contactPage');
 
 const pages = [
   ['/', episodesPage],
@@ -14,7 +11,7 @@ const pages = [
   ['/bibliography', bibliographyPage],
   ['/aboutme', aboutMePage],
   ['/thehistoryofrome', theHistoryOfRomePage],
-  ['/audiblerecs', audibleRecsPage],
+  // ['/audiblerecs', audibleRecsPage],
   ['/contact', contactPage],
 ];
 
