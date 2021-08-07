@@ -163,3 +163,19 @@ header {
 .about-me-page p {
   font-size: 1rem;
 }
+
+.support-form {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.support-submit {
+  font-size: 2rem;
+  font-family: 'Bebas Neue', sans-serif;
+  background: black;
+  color: white;
+  padding: 0.75rem 2rem 0.5rem 2rem;
+  letter-spacing: 1px;
+  border-radius: 8px;
+  cursor: pointer;
+}
