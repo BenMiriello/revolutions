@@ -17,7 +17,7 @@ const navigation = (parent, data) => {
       if (!clicked) changePage(parent, data);
       clicked = false;
     }
-  }, 300);
+  }, 250);
 
   document.addEventListener('onbeforeunload', () => {
     clearInterval(reloadInterval);
