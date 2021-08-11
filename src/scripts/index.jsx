@@ -4,6 +4,15 @@ const { isValidPodcastObject } = require('./helpers');
 const header = require('./header');
 const navPage = require('./navPage');
 
+const setNavbarOnClick = () => {
+  document.querySelector('#menu-button').addEventListener('click', e => {
+    const menuButton = document.querySelector('#menu-button-inner');
+    if (menuButton.classList.contains('menu-button-clicked')) {
+      menuButton.classList.remove('menu-button-clicked')
+    } else menuButton.classList.add('menu-button-clicked');
+  })
+}
+
 const app = podcast =>
   <div>
     { header(podcast) }
@@ -19,4 +28,5 @@ podcastFeedParser.getPodcastFromURL(feedUrl).then(podcast => {
   } else {
     location.href = "https://thehistoryofrome.typepad.com/revolutions_podcast/";
   }
+  {setNavbarOnClick()}
 });

@@ -17,6 +17,7 @@ h1 {
   font-weight: 600;
   font-size: 4rem;
   text-transform: uppercase;
+  margin: 0, 1rem;
 }
 
 h1 a {
@@ -30,7 +31,7 @@ h3 {
   font-size: 1.5rem;
 }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 750px) {
   h1 {
     font-size: 5rem;
   }
@@ -64,7 +65,7 @@ header {
   align-items: center;
 }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 750px) {
   #navbar {
     height: 5rem;
   }
@@ -88,6 +89,12 @@ header {
   max-width: 65rem;
   margin: auto;
   flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 750px) {
+  .second-nav {
+    display: none;
+  }
 }
 
 .second-nav a {
@@ -144,7 +151,7 @@ header {
   margin-top: 1.5rem;
 }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 750px) {
   .page-body-container {
     padding: 5rem;
     width: calc(100% - 10rem);
@@ -178,4 +185,92 @@ header {
   letter-spacing: 1px;
   border-radius: 8px;
   cursor: pointer;
+}
+
+
+
+
+/* Menu Button */
+
+.menu-button-bar {
+  display: block;
+  height: 5px;
+  width: 50px;
+  background: #FFF;
+  margin: 10px auto;
+}
+
+#menu-button, #menu-button-dummy {
+  cursor: pointer;
+  /* display: inline-block;
+  width: auto;
+  margin: 0 auto;
+  -webkit-transition: all .7s ease;
+  -moz-transition: all .7s ease;
+  -ms-transition: all .7s ease;
+  -o-transition: all .7s ease;
+  transition: all .7s ease; */
+}
+
+#menu-button-inner, #menu-button-inner-left {
+  display: inline-block;
+  width: 4rem;
+  height: auto;
+  margin: 0rem 1rem;
+  text-align: center;
+  position: relative;
+}
+
+@media only screen and (min-width: 750px) {
+  #menu-button-dummy, #menu-button {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  #menu-button-dummy {
+    display: none;
+  }
+
+  #navbar h1 {
+    display: block;
+    margin-left: 0.5rem;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+.middle {
+  margin: 0 auto;
+}
+
+.menu-button-bar {
+  -webkit-transition: all .7s ease;
+  -moz-transition: all .7s ease;
+  -ms-transition: all .7s ease;
+  -o-transition: all .7s ease;
+  transition: all .7s ease;
+}
+
+/* .menu-button:hover .top { */
+.menu-button-clicked .top {
+  -webkit-transform: translateY(15px) rotateZ(45deg);
+  -moz-transform: translateY(15px) rotateZ(45deg);
+  -ms-transform: translateY(15px) rotateZ(45deg);
+  -o-transform: translateY(15px) rotateZ(45deg);
+  transform: translateY(15px) rotateZ(45deg);
+}
+
+/* .menu-button:hover .bottom { */
+.menu-button-clicked .bottom {
+  -webkit-transform: translateY(-15px) rotateZ(-45deg);
+  -moz-transform: translateY(-15px) rotateZ(-45deg);
+  -ms-transform: translateY(-15px) rotateZ(-45deg);
+  -o-transform: translateY(-15px) rotateZ(-45deg);
+  transform: translateY(-15px) rotateZ(-45deg);
+}
+
+/* .menu-button:hover .middle { */
+.menu-button-clicked .middle {
+  width: 0;
 }
